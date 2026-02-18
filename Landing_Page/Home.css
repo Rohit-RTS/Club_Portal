@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.nav-container{
+    height: 4.5rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links ul  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+    
+
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+     padding-right: 1.5rem;
+     font-size: 1.2rem;
+}
+ 
+.nav-links ul li {
+    list-style: none;
+}
+
+.nav-actions a{
+     color: #FFFFFF;
+     font-size: 1.2rem; 
+      
+}
+.nav-actions{
+    margin-right: 5rem;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border: 2px solid white;
+    
+}
+ 
+.logo a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 2rem;
+    padding-left: 2rem;
+
+}
+.main_btn {
+    text-decoration: none;
+    
+}
+
+
+.hero{
+background: linear-gradient(135deg, #4F6DF5 25%, #6b14dc 50%, #4F6DF5 100%);
+
+
+
+  height:70vh;
+
+}
+
+
+.hero-content{
+
+ 
+    margin-top: 5rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+.content-txt{
+    font-size: 60px;
+  line-height: 1.1;
+    color: #FFFFFF;
+}
+.content-para{
+   
+  color: rgba(255,255,255,0.85);
+  max-width: 650px;
+  margin: 20px auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+
+.search-box{
+    height: 2rem;
+}
+
+/* for search box */
+
+.search-hero {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.search-hero input {
+  width: 650px;
+  max-width: 90%;
+  padding: 30px 22px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+
+  font-size: 16px;
+  background: #E5E7EB;   /* light gray like screenshot */
+  color: #374151;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Placeholder */
+.search-hero input::placeholder {
+  color: #9CA3AF;
+}
+
+/* Hover */
+.search-hero input:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Focus Effect (Premium Look) */
+.search-hero input:focus {
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(172, 75, 255, 0.3);
+}
+
+.hero-buttons{
+    padding-top: 5rem;
+
+}
+.hero-buttons a{
+    text-decoration: none;
+}
+
+.primary-btn{
+     background: linear-gradient(135deg, #6C63FF, #8E3BFF);
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+   color: #FFFFFF;
+   padding: 17px 20px 17px 20px;
+   border-radius: 10px;
+   margin-right: 2rem;
+   box-shadow: #374151;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+}
+.secondary-btn{
+    color: #FFFFFF;
+    padding: 18px 25px 18px 25px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+   
+    
+    
+}
+
