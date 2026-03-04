@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
- 
+
 
   <!-- HERO SECTION (Navbar must be inside this) -->
 
@@ -32,8 +33,8 @@
         </nav>
 
         <div class="nav-actions">
-          <a href="http://localhost:3000/login" class="login-btn main_btn">Login</a> /
-          <a href="http://localhost:3000/register" class="register-btn main_btn">Register</a>
+          <a href="login.html" class="login-btn main_btn">Login</a> /
+          <a href="register.html" class="register-btn main_btn">Register</a>
         </div>
        </div>
 
@@ -311,36 +312,68 @@
 
 
 
-
       </div>
-
-
-
-
 
     </section>
 
-    <section class="categories">
+   <section class="categories">
 
-      <h1 class="start">Featured Clubs</h1>
-      <p class="start-p">Join thousands of students in these popular communities</p>
+  <h1 class="title">Explore by Category</h1>
+  <p class="subtitle">Find clubs that match your interests and passions</p>
 
-      <div class="categories-container">
-        <div class="singal-categ"></div>
-        <div class="singal-categ"></div>
-        <div class="singal-categ"></div>
-        <div class="singal-categ"></div>
-        <div class="singal-categ"></div>
-        <div class="singal-categ"></div>
-        <div class="singal-categ"></div>
-        <div class="singal-categ"></div>
-      </div>
+  <div class="categories-container">
 
+    <div class="category-card" data-category="arts">
+      <div class="icon arts-media" aria-label="Arts & Media icon"></div>
+      <h3>Arts & Media</h3>
+      <p>2 clubs</p>
+    </div>
 
+    <div class="category-card" data-category="technology">
+      <div class="icon technology" aria-label="Technology icon"></div>
+      <h3>Technology</h3>
+      <p>3 clubs</p>
+    </div>
 
-    </section>
+   <div class="category-card" data-category="academic">
+      <div class="icon academic" aria-label="Academic icon"></div>
+      <h3>Academic</h3>
+      <p>12 clubs</p>
+    </div>
 
+    <div class="category-card" data-category="volunteering">
+      <div class="icon volunteering" aria-label="Volunteering icon"></div>
+      <h3>Volunteering</h3>
+      <p>29 clubs</p>
+    </div>
 
+    <div class="category-card" data-category="business">
+      <div class="icon business" aria-label="Business icon"></div>
+      <h3>Business</h3>
+      <p>2 clubs</p>
+    </div>
 
+    <div class="category-card" data-category="music">
+      <div class="icon music-arts" aria-label="Music & Arts icon"></div>
+      <h3>Music & Arts</h3>
+      <p>3 clubs</p>
+    </div>
+
+   <div class="category-card" data-category="sports">
+      <div class="icon sports" aria-label="Sports icon"></div>
+      <h3>Sports</h3>
+      <p>1 clubs</p>
+    </div>
+
+   <div class="category-card" data-category="cultural">
+      <div class="icon cultural" aria-label="Cultural icon"></div>
+      <h3>Cultural</h3>
+      <p>5 clubs</p>
+    </div>
+
+  </div>
+
+</section>
+<script src="Home.js"></script>
 </body>
 </html>
