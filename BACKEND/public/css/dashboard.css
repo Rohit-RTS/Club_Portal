@@ -1,0 +1,252 @@
+
+.profile_pic {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, #4f46e5, #a855f7);
+  animation: glow 3s ease-in-out infinite;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #7c3aed;
+  }
+  50% {
+    box-shadow: 0 0 25px #a855f7;
+  }
+  100% {
+    box-shadow: 0 0 10px #7c3aed;
+  }
+}
+
+.profile_info {
+  margin-top: 1rem;
+}
+
+.profile_edit {
+  border: 1px solid white;
+  padding: 15px 20px 15px 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #6c63ff, #8e3bff);
+  color: white;
+  font-size: 15px;
+  margin-top: 15px;
+  transition: 0.3s ease-in;
+}
+.profile_edit:hover {
+  transform: translateY(-3px);
+}
+
+.profile_main {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin-top: 175px;
+}
+
+/* stats of user */
+
+/* stats */
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: -30px;
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  width: 180px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.stat-card h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+/* achievements and personal info */
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 23px;
+}
+
+.div1 {
+  grid-row: span 6 / span 6;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: -2px 6px 26px -17px rgba(66, 68, 90, 1);
+  -moz-box-shadow: -2px 6px 26px -17px rgba(66, 68, 90, 1);
+  box-shadow: -2px 6px 26px -17px rgba(66, 68, 90, 1);
+  width: 700px;
+  margin: 15px 5px 5px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div2 {
+  grid-row: span 5 / span 5;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: -2px 6px 26px -17px rgba(66, 68, 90, 1);
+  -moz-box-shadow: -2px 6px 26px -17px rgba(66, 68, 90, 1);
+  box-shadow: -2px 6px 26px -17px rgba(66, 68, 90, 1);
+  margin: 15px 150px 5px 5px;
+  height: 500px;
+}
+
+.div3 {
+  grid-row: span 5 / span 5;
+  grid-column-start: 2;
+  grid-row-start: 6;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: -2px 6px 26px -17px rgba(66, 68, 90, 1);
+  -moz-box-shadow: -2px 6px 26px -17px rgba(66, 68, 90, 1);
+  box-shadow: -2px 6px 26px -17px rgba(66, 68, 90, 1);
+  height: 500px;
+  margin: 5px 150px 5px 5px;
+}
+
+.div4 {
+  grid-row: span 6 / span 6;
+  grid-row-start: 7;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: -2px 6px 26px -17px rgba(66, 68, 90, 1);
+  -moz-box-shadow: -2px 6px 26px -17px rgba(66, 68, 90, 1);
+  box-shadow: -2px 6px 26px -17px rgba(66, 68, 90, 1);
+  height: 550px;
+  margin: 5px 5px 15px 150px;
+}
+
+.parent div {
+  border-radius: 20px;
+}
+
+/* The main box */
+.card {
+  background-color: white;
+  border: 2px solid #e0d0ff; /* Light purple border */
+  border-radius: 15px;
+  width: 650px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative; /* Helps keep the tag in place */
+  transition: 0.11s ease;
+}
+.card:hover {
+  border: 2.5px solid #9366eb;
+}
+
+/* The thumbnail image */
+.club-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+/* Text area */
+.info .title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.info .date {
+  color: gray;
+  margin: 5px 0;
+}
+
+.info .link {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* The "Arts" bubble on the right */
+.tag {
+  background-color: #a040ff;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* for personal info */
+
+/* The Main Card Container */
+.profile-card {
+  background-color: #ffffff;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: sans-serif;
+}
+
+/* Big Heading */
+.card-header {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
+
+/* Gray Headers (ACADEMIC / ACCOUNT) */
+.section-label {
+  color: #88929b;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+/* Spacing for each info block */
+.data-row {
+  margin-bottom: 16px;
+}
+
+/* Small gray labels like "Department" */
+.label {
+  color: #a0aab4;
+  font-size: 13px;
+}
+
+/* Bold values like "Computer Science" */
+.text-bold {
+  margin: 4px 0 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+/* The horizontal line */
+.divider {
+  border: 0;
+  border-top: 1px solid #f0f0f0;
+  margin: 20px 0;
+}

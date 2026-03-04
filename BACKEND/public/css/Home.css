@@ -1,0 +1,358 @@
+/* ================= GLOBAL ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+
+/* ================= NAVBAR ================= */
+
+.nav-container {
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.nav-links ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links ul li {
+  list-style: none;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding-right: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.nav-actions {
+  margin-right: 5rem;
+  padding: 8px 15px;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.nav-actions a {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+  background: linear-gradient(135deg, #4F6DF5 25%, #6b14dc 50%, #4F6DF5 100%);
+  height: 70vh;
+}
+
+.hero-content {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content-txt {
+  font-size: 60px;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.content-para {
+  color: rgba(255,255,255,0.85);
+  max-width: 650px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+/* ================= SEARCH BOX ================= */
+
+.search-hero {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-hero input {
+  width: 650px;
+  max-width: 90%;
+  padding: 18px 22px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #E5E7EB;
+  color: #374151;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.search-hero input:focus {
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(172, 75, 255, 0.3);
+}
+
+/* ================= HERO BUTTONS ================= */
+
+.hero-buttons {
+  padding-top: 3rem;
+}
+
+.hero-buttons a {
+  text-decoration: none;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #6C63FF, #8E3BFF);
+  color: #ffffff;
+  padding: 14px 22px;
+  border-radius: 10px;
+  margin-right: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  color: #ffffff;
+  padding: 14px 22px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+
+/* ================= FEATURED SECTION ================= */
+
+.card-console {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.start {
+  font-size: 50px;
+  color: #705CF6;
+}
+
+.start-p {
+  color: rgb(87, 87, 87);
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* ================= PREMIUM CAROUSEL ================= */
+
+.carousel {
+  --items: 6;
+  --card-width: 360px;
+  --gap: 40px;
+  --duration: 50s;
+
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  height: 520px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.carousel[mask] {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8% 92%,
+    transparent
+  );
+}
+
+.carousel .club-card {
+  position: absolute;
+  top: 0;
+  left: calc(100% + var(--gap));
+  width: var(--card-width);
+
+  animation: scroll var(--duration) linear infinite;
+  animation-delay: calc(
+    var(--duration) / var(--items) * var(--i) * -1
+  );
+}
+
+.carousel .club-card:nth-child(1) { --i: 0; }
+.carousel .club-card:nth-child(2) { --i: 1; }
+.carousel .club-card:nth-child(3) { --i: 2; }
+.carousel .club-card:nth-child(4) { --i: 3; }
+.carousel .club-card:nth-child(5) { --i: 4; }
+.carousel .club-card:nth-child(6) { --i: 5; }
+
+@keyframes scroll {
+  100% {
+    transform: translateX(
+      calc(
+        (var(--card-width) + var(--gap)) * var(--items) * -1
+      )
+    );
+  }
+}
+
+.carousel:hover .club-card {
+  animation-play-state: paused;
+}
+
+/* ================= CLUB CARD ================= */
+
+.club-card {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+
+.club-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.15);
+}
+
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  background: #f3f4f6;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.category {
+  background: #ede9fe;
+  color: #6b14dc;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  width: fit-content;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.info-row img {
+  width: 18px;
+}
+
+.join-btn {
+  margin-top: 10px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2f52ec, #8026ff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.join-btn:hover {
+  opacity: 1;
+}
+
+/* ================= CATEGORIES ================= */
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.categories-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.singal-categ {
+  height: 200px;
+  width: 280px;
+  border-radius: 16px;
+  background: #f3f4f6;
+  transition: 0.3s ease;
+}
+
+.singal-categ:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+  .categories-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .content-txt {
+    font-size: 40px;
+  }
+
+  .carousel {
+    --card-width: 300px;
+  }
+
+  .categories-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,73 +1,96 @@
+/* Full page styling */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #4e73df, #1cc88a);
+
+    /* Modern gradient background */
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    /* Center form perfectly */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+
+    min-height: 100vh;
 }
 
+/* Container */
 .auth-container {
     width: 100%;
     max-width: 400px;
+    padding: 20px;
 }
 
+/* Card */
 .auth-card {
     background: white;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
+/* Heading */
 .auth-card h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #333;
 }
 
+/* Input group */
 .input-group {
     margin-bottom: 15px;
 }
 
+/* Labels */
 .input-group label {
     display: block;
     margin-bottom: 5px;
     font-size: 14px;
+    font-weight: 600;
+    color: #555;
 }
 
+/* Inputs */
 .input-group input {
     width: 100%;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 6px;
     border: 1px solid #ccc;
+    font-size: 14px;
 }
 
+/* Focus effect */
 .input-group input:focus {
     border-color: #4e73df;
     outline: none;
 }
 
+/* Button */
 .btn {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: none;
     background-color: #4e73df;
     color: white;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
 }
 
+/* Button hover */
 .btn:hover {
     background-color: #2e59d9;
 }
 
+/* Bottom text */
 .switch-text {
     text-align: center;
     margin-top: 15px;
     font-size: 14px;
 }
 
+/* Link */
 .switch-text a {
     color: #4e73df;
     text-decoration: none;
